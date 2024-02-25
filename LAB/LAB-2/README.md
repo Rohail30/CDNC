@@ -1,33 +1,8 @@
-Step 2 b: Click the Terminal application icon; verify that the Port Configuration default settings are correct.
-What is the setting for bits per second? _______ 9600
+# Lab# 2.1: Packet Tracer - Navigating the IOS
+- **Introduction:** This lab focuses on familiarizing users with the Cisco IOS (Internetwork Operating System) interface using Packet Tracer. It involves navigating various IOS commands and features to gain proficiency in accessing and configuring network devices.
 
-lab 1.1
-in terminal enter ?
-enable
-show clock
-clock ?
-clock set 15:37:00 24 February 2024
-if go in translatin then ctr shift 6 to exit
-exit to exit mode
+# Lab# 2.2: Configuring Initial Switch Settings
+- **Introduction:** In this lab, users learn to configure initial settings on Cisco switches. It covers tasks such as setting the hostname, securing console access, configuring passwords, and enabling basic connectivity features to ensure proper network operation.
 
-lab 2.2
-enable
-clock set 15:52:00 24 February 2024
-configure terminal 
-Switch(config)#hostname S1
-exit
-show running-config
-
-
-enable secret itsasecret--> encrypted password
-service password-encyption --> enabling the service of encryprition
-banner motd "This is a secure system authorize access only!!!" --> adding a banner
-copy running-config startup-config
-show start
-
-
-Class A = 1.126
-Class B = 128.191
-Class C = 192.223
-
-Private IP = 10
+# Lab# 2.3: Implement Basic Connectivity
+- **Introduction:** This lab focuses on implementing basic connectivity within a network environment using Cisco switches. Users will configure IP addresses, enable interfaces, verify connectivity, and troubleshoot basic network issues to ensure proper communication between devices.
