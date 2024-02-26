@@ -77,8 +77,95 @@ A peer-to-peer (P2P) connection is a type of network connection where two or mor
 5. **Dependency on Participant Availability:** P2P connections rely on the availability of other participants in the network. If key participants go offline or leave the network, it may impact the availability and functionality of the network as a whole.
 
 ### Method of Commutnication
-<img src='./Screenshots/Screenshot1.png'>
+<img src='./modofcom.png'>
 
 ### Network Representation
-<img src='./Screenshots/Screenshot1.png'>
+<img src='./NetRepres.png'>
+
+# Types of Network Infrastructures
+
+## Local Area Network (LAN)
+
+A Local Area Network (LAN) is a network infrastructure that covers a relatively small geographic area, such as a single building, office, or campus. LANs typically use Ethernet or Wi-Fi technology to connect devices within the same physical location. They are commonly used to facilitate communication and resource sharing among computers, printers, servers, and other devices within an organization.
+
+## Wide Area Network (WAN)
+
+A Wide Area Network (WAN) is a network infrastructure that covers a large geographic area, such as multiple cities, countries, or continents. WANs connect LANs and other smaller networks over long distances using various communication technologies, including leased lines, fiber-optic cables, and satellite links. The internet is the most prominent example of a WAN, enabling global connectivity and communication between devices worldwide.
+
+## Metropolitan Area Network (MAN)
+
+A Metropolitan Area Network (MAN) is a network infrastructure that covers a larger geographic area than a LAN but smaller than a WAN, typically spanning a city or metropolitan area. MANs provide high-speed connectivity to connect multiple LANs and support communication between different locations within the same city. They are often used by telecommunications companies and large enterprises to provide services like broadband internet access and video conferencing.
+
+## Wireless LAN (WLAN)
+
+A Wireless LAN (WLAN) is a type of network infrastructure that uses wireless communication technology, such as Wi-Fi, to connect devices within a local area. WLANs eliminate the need for physical Ethernet cables, allowing users to connect to the network wirelessly using smartphones, laptops, tablets, and other Wi-Fi-enabled devices. WLANs are commonly deployed in homes, offices, airports, coffee shops, and other public spaces to provide flexible and convenient internet access.
+
+## Storage Area Network (SAN)
+
+A Storage Area Network (SAN) is a specialized network infrastructure dedicated to providing high-speed access to shared storage resources, such as disk arrays and tape libraries. SANs use Fibre Channel or iSCSI protocols to connect servers and storage devices over high-speed network connections, allowing multiple servers to access centralized storage resources simultaneously. SANs are commonly used in data centers and enterprise environments to support mission-critical applications, data backups, and disaster recovery solutions.
+
+# Intranet and Extranet
+<img src='./intraextra.png'>
+
+## Intranet
+
+An intranet is a private network infrastructure that is restricted to an organization or company and is used for internal communication, collaboration, and sharing of resources. It typically employs technologies such as web servers, databases, and email systems to provide employees with access to company information, documents, applications, and services. Intranets are often accessed using web browsers and can include features such as employee directories, company news, project management tools, and document repositories. Intranets help improve communication, streamline workflows, and facilitate knowledge sharing within an organization.
+
+## Extranet
+
+An extranet is an extension of an intranet that allows limited access to authorized external users, such as business partners, suppliers, customers, or clients. It provides a secure and controlled environment for sharing specific resources, information, and services with external parties over the internet. Extranets use technologies such as virtual private networks (VPNs), firewalls, and encryption to ensure data privacy and security. Common examples of extranets include customer portals for accessing account information, supplier portals for managing orders and inventory, and partner portals for collaboration on joint projects. Extranets help foster collaboration, enhance relationships, and improve efficiency in business interactions between organizations and their external stakeholders.
+
+## Four Essential Characteristics of Network Architectures
+
+### 1. Fault Tolerance
+
+Ensures network resilience by minimizing disruptions in the event of component failures through redundancy and self-healing mechanisms.
+
+### 2. Scalability
+
+Enables networks to adapt and expand seamlessly to accommodate growth in traffic, users, and data without compromising performance.
+
+### 3. Quality of Service (QoS)
+
+Guarantees predictable and consistent performance for different types of traffic, prioritizing critical applications to meet service level agreements.
+
+### 4. Security
+
+Protects network resources, data, and communications from unauthorized access or malicious activities using authentication, encryption, and access controls.
+
+# Security Threats to Networks
+
+## External Threats
+
+The most common external threats to networks include:
+
+1. **Viruses, Worms, and Trojan Horses:** Malicious software designed to infect computers, replicate itself, and cause damage to systems or steal sensitive information.
+  
+2. **Spyware and Adware:** Software that secretly monitors user activity, collects information, and delivers unwanted advertisements without the user's consent.
+  
+3. **Zero-day Attacks (Zero-hour Attacks):** Attacks exploiting vulnerabilities in software or hardware that are unknown to the vendor or have not been patched yet.
+  
+4. **Hacker Attacks:** Unauthorized attempts to gain access to computer systems or networks to disrupt operations, steal data, or cause damage.
+  
+5. **Denial of Service (DoS) Attacks:** Attacks that flood a network, server, or application with excessive traffic or requests to overwhelm its capacity and make it inaccessible to legitimate users.
+  
+6. **Data Interception and Theft:** Unauthorized access or eavesdropping on network communications to intercept and steal sensitive information, such as passwords, financial data, or intellectual property.
+  
+7. **Identity Theft:** Unauthorized use of someone else's personal or financial information for fraudulent purposes, such as accessing accounts, making purchases, or committing other crimes.
+
+# Security Solutions for Networks
+
+## Network Security Components
+
+1. **Antivirus and Antispyware:** Detect and remove malicious software.
+
+2. **Firewall Filtering:**  Monitor and control network traffic for security.
+
+3. **Dedicated Firewall Systems:**  Hardware/software barriers for network protection.
+
+4. **Access Control Lists (ACL):** Rules controlling network resource access.
+
+5. **Intrusion Prevention Systems (IPS):** Monitor and block suspicious network activity.
+
+6. **Virtual Private Networks (VPNs):**  Secure remote network access over the internet.
 
