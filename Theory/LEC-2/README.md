@@ -106,4 +106,16 @@ Auto MDIX (Automatic Medium-Dependent Interface Crossover) is a feature in moder
 
 # UTP vs Fiber-Optic
 
+## UTP (Unshielded Twisted Pair)
+
+- **Description:** UTP cables consist of twisted pairs of copper wires and are commonly used for Ethernet networking.
+- **Advantages:** UTP cables are affordable, easy to install, and suitable for short to medium-distance connections.
+- **Limitations:** They are susceptible to electromagnetic interference (EMI) and have limited bandwidth over longer distances.
+
+## Fiber-Optic
+
+- **Description:** Fiber-optic cables use strands of glass or plastic fibers to transmit data using light signals.
+- **Advantages:** Fiber-optic cables offer high bandwidth, immunity to EMI, and support for long-distance transmissions.
+- **Limitations:** They are more expensive than UTP cables and require specialized equipment for installation and maintenance.
+
 <img src='./uvsf.png'>
