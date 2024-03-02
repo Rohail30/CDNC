@@ -1,4 +1,4 @@
-Certainly! Here are the commands separated into markdown format:
+
 
 **Switch Configuration:**
 ```markdown
