@@ -1,141 +1,48 @@
-**Switch Configuration:**
+### Switch Configuration
 
-Configure Switch:
+1. `configure terminal` - Enter Global Configuration Mode
+2. `interface vlan 1` - Access Interface Configuration Mode for VLAN 1
+3. `ip address 192.168.1.2 255.255.255.0` - Set IP address and subnet mask
+4. `no shutdown` - Enable the interface
+5. `exit` - Exit Interface Configuration Mode
+6. `line vty 0 4` - Access Line Configuration Mode for VTY lines
+7. `password cisco` - Set VTY password
+8. `login` - Enable login on the VTY lines
+9. `end` - Exit Global Configuration Mode
+10. `copy run start` - Save the configuration to NVRAM
 
-```bash
-configure terminal
-```
+#
+### Router Configuration
 
-```bash
-interface vlan 1
-```
+1. `enable` - Enter Privileged EXEC Mode
+2. `configure terminal` - Enter Global Configuration Mode
+3. `interface gigabitEthernet 0/0` - Access Interface Configuration Mode for GigabitEthernet 0/0
+4. `ip address 192.168.1.2 255.255.255.0` - Set IP address and subnet mask
+5. `no shutdown` - Enable the interface
+6. `exit` - Exit Interface Configuration Mode
+7. `interface gigabitEthernet 0/1` - Access Interface Configuration Mode for GigabitEthernet 0/1
+8. `ip address 172.16.5.1 255.255.0.0` - Set IP address and subnet mask
+9. `no shutdown` - Enable the interface
+10. `end` - Exit Global Configuration Mode
+11. `copy run start` - Save the configuration to NVRAM
 
-```bash
-ip address 192.168.1.2 255.255.255.0
-```
+#
+### Default Gateway Configuration on Switches
 
-```bash
-no shutdown
-```
+1. `enable` - Enter Privileged EXEC Mode
+2. `configure terminal` - Enter Global Configuration Mode
+3. `ip default-gateway 192.168.1.1` - Set the default gateway
+4. `exit` - Exit Global Configuration Mode
+5. `copy run start` - Save the configuration to NVRAM
+6. `enable` - Enter Privileged EXEC Mode
+7. `configure terminal` - Enter Global Configuration Mode
+8. `ip default-gateway 172.16.5.1` - Set the default gateway
+9. `exit` - Exit Global Configuration Mode
+10. `copy run start` - Save the configuration to NVRAM
 
-```bash
-exit
-```
+#
+#### table
+<img src='./table.png'>
 
-```bash
-line vty 0 4
-```
-
-```bash
-password cisco
-```
-
-```bash
-login
-```
-
-```bash
-end
-```
-
-```bash
-copy run start
-```
-
-**Router Configuration:**
-
-```markdown
-Configure Router:
-
-```bash
-enable
-```
-
-```bash
-configure terminal
-```
-
-```bash
-interface gigabitEthernet 0/0
-```
-
-```bash
-ip address 192.168.1.2 255.255.255.0
-```
-
-```bash
-no shutdown
-```
-
-```bash
-exit
-```
-
-```bash
-interface gigabitEthernet 0/1
-```
-
-```bash
-ip address 172.16.5.1 255.255.0.0
-```
-
-```bash
-no shutdown
-```
-
-```bash
-end
-```
-
-```bash
-copy run start
-```
-
-```bash
-exit
-```
-
-**Default Gateway Configuration on Switches:**
-
-```markdown
-Configure Default Gateway on Switches:
-
-```bash
-enable
-```
-
-```bash
-configure terminal
-```
-
-```bash
-ip default-gateway 192.168.1.1
-```
-
-```bash
-exit
-```
-
-```bash
-copy run start
-```
-
-```markdown
-enable
-```
-
-```bash
-configure terminal
-```
-
-```bash
-ip default-gateway 172.16.5.1
-```
-
-```bash
-exit
-```
-
-```bash
-copy run start
-```
+#
+<img src='./lab3.png'>
