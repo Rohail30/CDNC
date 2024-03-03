@@ -52,5 +52,5 @@ Below are examples of how to use these commands:
    ```
    Ctrl+C
    ```
-
-
+#
+<img src='./CiscoPacketTracerExample.png'>
