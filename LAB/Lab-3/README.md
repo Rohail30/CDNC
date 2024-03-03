@@ -34,11 +34,11 @@
 3. `ip default-gateway 192.168.1.1` - Set the default gateway
 4. `exit` - Exit Global Configuration Mode
 5. `copy run start` - Save the configuration to NVRAM
-6. `enable` - Enter Privileged EXEC Mode
-7. `configure terminal` - Enter Global Configuration Mode
-8. `ip default-gateway 172.16.5.1` - Set the default gateway
-9. `exit` - Exit Global Configuration Mode
-10. `copy run start` - Save the configuration to NVRAM
+
+#
+#### Telnet
+Telnet is a network protocol for remote access to devices over a network. It allows users to control and manage devices from a remote location.
+- `telnet 192.168.1.253` -initiates a Telnet session to the device with the IP address 192.168.1.253
 
 #
 #### table
