@@ -11,6 +11,8 @@
 9. `end` - Exit Global Configuration Mode
 10. `copy run start` - Save the configuration to NVRAM
 
+<br>
+
 #
 ### Router Configuration
 
@@ -26,6 +28,8 @@
 10. `end` - Exit Global Configuration Mode
 11. `copy run start` - Save the configuration to NVRAM
 
+<br>
+
 #
 ### Default Gateway Configuration on Switches
 
@@ -35,10 +39,14 @@
 4. `exit` - Exit Global Configuration Mode
 5. `copy run start` - Save the configuration to NVRAM
 
+<br>
+
 #
 #### Telnet
 Telnet is a network protocol for remote access to devices over a network. It allows users to control and manage devices from a remote location.
 - `telnet 192.168.1.253` -initiates a Telnet session to the device with the IP address 192.168.1.253
+
+<br>
 
 #
 #### table
