@@ -1,8 +1,18 @@
-### Lab# 2.1: Packet Tracer - Navigating the IOS
-- This lab focuses on familiarizing users with the Cisco IOS (Internetwork Operating System) interface using Packet Tracer. It involves navigating various IOS commands and features to gain proficiency in accessing and configuring network devices.
+### Operating Modes in Cisco IOS
 
-### Lab# 2.2: Configuring Initial Switch Settings
-- In this lab, users learn to configure initial settings on Cisco switches. It covers tasks such as setting the hostname, securing console access, configuring passwords, and enabling basic connectivity features to ensure proper network operation.
+"Operating Modes in Cisco IOS" refers to the different modes or levels of operation that are available within the Cisco Internetwork Operating System (IOS). These modes determine the level of access and the types of commands that can be executed on a Cisco networking device, such as routers and switches. The main operating modes in Cisco IOS include:
 
-### Lab# 2.3: Implement Basic Connectivity
-- This lab focuses on implementing basic connectivity within a network environment using Cisco switches. Users will configure IP addresses, enable interfaces, verify connectivity, and troubleshoot basic network issues to ensure proper communication between devices.
+#### User EXEC Mode:
+
+- **Description:** Provides basic monitoring commands.
+- **Command:** `hostname>`
+
+#### Privileged EXEC Mode:
+
+- **Description:** Offers full control over device configurations.
+- **Command:** `hostname#` (Requires entering from User EXEC Mode using `enable` command and providing the enable password if configured)
+
+#### Global Configuration Mode:
+
+- **Description:** Allows changes to device settings.
+- **Command:** `hostname(config)#` (Requires entering from Privileged EXEC Mode using `configure terminal` command)
