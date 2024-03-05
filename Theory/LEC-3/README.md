@@ -95,3 +95,12 @@ Using NAT, the router translates the private IP address of each device into its 
 
 This way, the website sees all requests coming from your router's public IP address, hiding the individual IP addresses of devices within your home network. This provides a layer of security and privacy for your devices while allowing them to access the internet using a single public IP address.
 
+### Interface Configuration
+
+1. `configure terminal` - Enter Global Configuration Mode
+2. `interface vlan 1` - Access Interface Configuration Mode for VLAN 1
+3. `ip address 192.168.1.2 255.255.255.0` - Set IP address and subnet mask
+4. `no shutdown` - Enable the interface and up the link
+5. `line console 0` - Enter Console Line Configuration Mode
+6. `password 123` - Set the console password to "123"
+7. `login` - Enable login with password on the console line
