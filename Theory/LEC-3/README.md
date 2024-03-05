@@ -18,10 +18,116 @@ The OSI (Open Systems Interconnection) Model is a conceptual framework used to u
 
 7. **Application Layer:** Provides interfaces for user applications to access network services, such as email, web browsing, and file transfer.
 
+<img src='./osi-m.png'>
+
+## Application Layer
+The Application Layer provides network services directly to end-users or applications. These services are implemented through protocols that handle the exchange of data between applications. For example, HTTP is a protocol used with web browsers like Google Chrome, Firefox, and Internet Explorer. Other applications that utilize the Application Layer include Office, Outlook, and Skype. These applications offer services that enable the exchange of data with the Presentation Layer, allowing for communication between different devices and platforms.
+
+<img src='./a.png'>
+
+## Presentation Layer
+The Presentation layer, or layer 6, performs the uncomplicated task of syntax processing or converting data from one format to another. For example, consider you are ordering something from an online store. These transactions are typically handled in a secure transmission which means that the data passing between the “store” or the Website Application will transmit encrypted data to the Presentation layer that will need to be decrypted and processed. This layer handles translating the data from the top layer, which is presented in application format, to network format and vice versa. After the Presentation layer processes the data from one format to another, the information is then passed to the Session layer or the Application layer depending on whether the data is transmitting or receiving.
+
+<img src='./p.png'>
+
+## Session Layer
+At the Session layer, or layer 5, the construction, direction, and conclusion of connections between devices occur. This layer supports multiple types of connections as well as being responsible for authentication and reconnection if a network interruption should occur. After the session is established the data then passes to or from the Transport layer.
+
+<img src='./s.png'>
+
+## Trasnport Layer
+The Transport layer, or layer 4, is responsible for the transmission of data across network connections. This layer coordinates how much data to send, how fast, where it goes, and these sorts of things. Of the most widely known protocols for internet applications, these services may be provided by Transmission Control Protocol or TCP and User Datagram Protocol or UDP. Other protocols may provide additional capabilities including error recovery, data flow, and retransmission. Once the Transport layer has completed its function, the data is then passed to or from the Network layer.
+
+<img src='./t.png'>
+
+## Network Layer
+The Network layer, or layer 3, handles the routing of the data. After the data arrives at this layer, each frame of data is examined to conclude if the data has reached its ultimate target. The layer sends data to the correct destination on outgoing transmissions and receives incoming transmissions as well.  The IP portion of TCP/IP is the commonly known network layer for the Internet.
+
+<img src='./n.png'>
+
+## Datalink Layer
+The Data Link layer, or layer 2, is considered the most complex of the layers. This layer is often divided into sublayers called Media Access Control or MAC and Logical Link Control or LLC. The layer sets up links across the physical network. When this layer receives data from the Physical layer, it checks for transmission errors and then packages the bits into data frames. From there, this layer manages the physical addressing methods for the MAC or LLC layers. An example of the MAC layer includes 802.11 wireless specifications as well as Ethernet. At the Data Link layer, the data passes to or from the final layer in the OSI model which is the Physical layer.
+
+<img src='./d.png'>
+
+## Physical Layer
+The Physical layer, or layer 1, is the electrical/physical layer of the model. This layer encompasses the network cables, power plugs, cable pinouts, wireless radio frequencies, connectors, transceivers, receivers, repeaters, pulses of light, electric voltages, etc. When troubleshooting problems, this is typically the first place to start. Is the device plugged in? Is the wireless card working? At this layer, the model transmits the digital data bits from the source or sending devices Physical layer, over network communications media, which can be electrical, mechanical, or radio, to the receiving or destination devices Physical layer.
+
+<img src='./ph.png'>
+
+## Explanation of Data Encapsulation in the OSI Model
+
+In the OSI (Open Systems Interconnection) model, data is encapsulated at various layers as it traverses through the network. Here's how data is encapsulated at each layer:
+
+```
+Application Layer (Layer 7): Data
+    ↓
+Transport Layer (Layer 4): Segment
+    ↓
+Network Layer (Layer 3): Packet
+    ↓
+Data Link Layer (Layer 2): Frame
+    ↓
+Physical Layer (Layer 1): Transmission over Physical Medium
+```
+
+#### Definitions:
+
+1. **Data:** At the highest layer of the OSI model, the Application Layer, data refers to the information generated or consumed by user applications. This data could be anything from text, images, audio, video, or any other type of content that users interact with.
+
+2. **Segment:** In the Transport Layer (Layer 4) of the OSI model, data is divided into smaller units known as segments. Segmentation allows for the efficient transmission of data across a network. Each segment typically includes a header containing control information and a payload containing a portion of the original data.
+
+3. **Packet:** At the Network Layer (Layer 3), segments are encapsulated into packets for routing through the network. A packet includes not only the segmented data but also additional information such as source and destination IP addresses, enabling routers to forward the packet towards its destination across interconnected networks.
+
+4. **Frame:** In the Data Link Layer (Layer 2), packets are further encapsulated into frames for transmission over the physical network medium. A frame contains the packet along with additional framing information, such as MAC (Media Access Control) addresses, which are used for local network communication and determining the next hop in the network path.
+
+This encapsulation process enables reliable communication across networks by adding headers and possibly trailer information at each layer, forming a hierarchical structure as data moves through the OSI layers.
+
+<img src='./dspf.png'>
+
+### PDU
+PDU stands for Protocol Data Unit. It is a term used to describe the data unit or packet at different layers of the OSI (Open Systems Interconnection) model or TCP/IP protocol suite. Essentially, it's the unit of data that is being transferred between network entities at each layer of the network stack. 
+
+For example, in the OSI model:
+
+- At the application layer, the PDU is typically referred to as a message or data.
+- At the transport layer, it's commonly called a segment (for TCP) or a datagram (for UDP).
+- At the network layer, it's known as a packet.
+- At the data link layer, it's often referred to as a frame.
+- At the physical layer, the PDU is the actual bitstream transmitted over the physical medium.
+
+The TCP/IP model and the OSI (Open Systems Interconnection) model are both conceptual frameworks used to understand and describe the functions of networking protocols. Here's a comparison between the two:
+
+## OSI vs TCP/IP
+### TCP/IP Model:
+- Developed by the Department of Defense (DoD) in the 1970s for ARPANET, the precursor to the modern internet.
+- Consists of four layers: Application, Transport, Internet (or Network), and Link.
+- More closely aligned with the protocols actually in use on the internet.
+- Emphasizes flexibility and scalability.
+- Often referred to as a "simpler" model compared to OSI.
+
+### OSI Model:
+- Developed by the International Organization for Standardization (ISO) in the 1980s.
+- Consists of seven layers: Physical, Data Link, Network, Transport, Session, Presentation, and Application.
+- Provides a more detailed and comprehensive framework for understanding networking protocols.
+- Each layer has a specific function and abstraction level, promoting interoperability between different vendor implementations.
+- Often used as a reference model for designing and understanding network architectures.
+
+### Comparison:
+- Both models are used to conceptualize networking protocols, but the OSI model is more theoretical, while the TCP/IP model is more practical.
+- The OSI model has more layers, which provides a more granular view of networking functions, whereas the TCP/IP model combines some of these functions into fewer layers.
+- The TCP/IP model is widely used in practice, especially on the internet, while the OSI model is primarily used as a reference model.
+- Both models have their strengths and weaknesses, and understanding both can provide a comprehensive view of networking concepts and protocols.
+
+<img src='./ovt.png'>
+
+## Network Topology
+
+<img src='./nt.png'>
+
 ## Switch as a Layer 2 Device
 
 Switch operates at the Data Link Layer (Layer 2) of the OSI model. It forwards data based on MAC addresses, facilitating communication within the same local network segment. Unlike routers, switches do not inspect IP addresses or perform routing between different subnets.
-
 
 ## IP Address Classes
 In an IPv4 address, such as "192.168.1.100", the address is divided into four parts separated by periods. Each part is called an "octet" because it represents 8 bits of the address. The value of each octet ranges from 0 to 255. Here are the classes along with their ranges and examples:
