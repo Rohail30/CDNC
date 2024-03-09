@@ -1,43 +1,45 @@
 ### Switch Configuration
-
-1. `configure terminal` - Enter Global Configuration Mode
-2. `interface vlan 1` - Access Interface Configuration Mode for VLAN 1
-3. `ip address 192.168.1.2 255.255.255.0` - Set IP address and subnet mask
-4. `no shutdown` - Enable the interface
-5. `exit` - Exit Interface Configuration Mode
-6. `line vty 0 4` - Access Line Configuration Mode for VTY lines
-7. `password cisco` - Set VTY password
-8. `login` - Enable login on the VTY lines
-9. `end` - Exit Global Configuration Mode
-10. `copy run start` - Save the configuration to NVRAM
+1. `Switch> enable`- Enter Privileged EXEC Mode
+2. `Switch# show running-config`- Show the current configuration
+3. `Switch# configure terminal`- Enter Global Configuration Mode
+4. `Switch(config)# hostname S1`- Set the hostname to S1
+5. `S1(config)# line console 0`- Enter Console Line Configuration Mode
+6. `S1(config-line)# password letmein`- Set the console password
+7. `S1(config-line)# login`- Enable login on the console
+8. `S1(config-line)# exit`- Exit Console Line Configuration Mode
+9. `S1(config)# enable password c1$c0`- Set the privileged exec password (plaintext)
+10. `S1(config)# enable secret itsasecret`- Set the privileged exec password (encrypted), overrides the enable password
+11. `S1(config)# service password-encryption`- Encrypt all passwords (plaintext to encrypted)
+12. `S1(config)# banner motd "Authorized Access Only!"`- Set the message of the day banner
+13. `S1(config)# exit`- Exit Global Configuration Mode
+14. `S1# copy running-config startup-config`- Save the configuration to NVRAM (Non-Volatile RAM)
 
 <br>
 
 #
 ### Router Configuration
+1. `Router> enable`- Enter Privileged EXEC Mode
+2. `Router# configure terminal`- Enter Global Configuration Mode
+3. `Router(config)# interface gigabitEthernet 0/0` or `interface gigabitEthernet 0/1` - Access Interface Configuration Mode for GigabitEthernet 0/0 or GigabitEthernet 0/1- Enter Interface Configuration Mode
+4. `Router(config-if)# ip address 192.168.1.2 255.255.255.0`- Set IP address and subnet mask
+5. `Router(config-if)# no shutdown`- Enable the interface
+6. `Router(config-if)# end`- Exit to Privileged EXEC Mode
+7. `Router# copy running-config startup-config`
+8. `Router# show ip interface brief`- Verify the configuration
+9. `Router# exit`- Exit Interface Configuration Mode
+10. `copy run start` - Save the configuration to NVRAM
 
-1. `enable` - Enter Privileged EXEC Mode
-2. `configure terminal` - Enter Global Configuration Mode
-3. `interface gigabitEthernet 0/0` - Access Interface Configuration Mode for GigabitEthernet 0/0
-4. `ip address 192.168.1.2 255.255.255.0` - Set IP address and subnet mask
-5. `no shutdown` - Enable the interface
-6. `exit` - Exit Interface Configuration Mode
-7. `interface gigabitEthernet 0/1` - Access Interface Configuration Mode for GigabitEthernet 0/1
-8. `ip address 172.16.5.1 255.255.0.0` - Set IP address and subnet mask
-9. `no shutdown` - Enable the interface
-10. `end` - Exit Global Configuration Mode
-11. `copy run start` - Save the configuration to NVRAM
 
 <br>
 
 #
 ### Default Gateway Configuration on Switches
 
-1. `enable` - Enter Privileged EXEC Mode
-2. `configure terminal` - Enter Global Configuration Mode
-3. `ip default-gateway 192.168.1.1` - Set the default gateway
-4. `exit` - Exit Global Configuration Mode
-5. `copy run start` - Save the configuration to NVRAM
+1. `S1>enable` - Enter Privileged EXEC Mode
+2. `S1#configure terminal` - Enter Global Configuration Mode
+3. `S1(config)#ip default-gateway 192.168.1.1` - Set the default gateway
+4. `S1(config)#exit` - Exit Global Configuration Mode
+5. `S1#copy run start` - Save the configuration to NVRAM
 
 <br>
 
