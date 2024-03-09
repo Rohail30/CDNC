@@ -21,7 +21,7 @@
 1. `Router> enable`- Enter Privileged EXEC Mode
 2. `Router# configure terminal`- Enter Global Configuration Mode
 3. `Router(config)# interface gigabitEthernet 0/0` or `interface gigabitEthernet 0/1` - Access Interface Configuration Mode for GigabitEthernet 0/0 or GigabitEthernet 0/1- Enter Interface Configuration Mode
-4. `Router(config-if)# ip address 192.168.1.2 255.255.255.0`- Set IP address and subnet mask
+4. `Router(config-if)# ip address 192.168.1.1 255.255.255.0`- Set IP address and subnet mask
 5. `Router(config-if)# no shutdown`- Enable the interface
 6. `Router(config-if)# end`- Exit to Privileged EXEC Mode
 7. `Router# copy running-config startup-config`
