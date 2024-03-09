@@ -44,6 +44,19 @@
 <br>
 
 #
+### Setting up Virtual Terminal Lines (VTY)
+
+To set up VTY lines for remote access:
+
+1. `S1> enable`
+2. `S1# configure terminal`
+3. `S1(config)# line vty 0 4` - Enter VTY Line Configuration Mode
+4. `S1(config-line)# password c1$c0` - Set the VTY password
+5. `S1(config-line)# login` - Enable login on the VTY lines
+
+VTY lines are used to remotely connect to a switch using Telnet.
+
+#
 #### Telnet
 Telnet is a network protocol for remote access to devices over a network. It allows users to control and manage devices from a remote location.
 - `telnet 192.168.1.253` -initiates a Telnet session to the device with the IP address 192.168.1.253
