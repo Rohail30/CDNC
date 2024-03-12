@@ -26,7 +26,7 @@
 - Total host = 2^(# of zeros) = 2^8 = 256
 - Usable host = Total host - 2
 
-### 192.168.200.0
+### 192.168.200.0/24
 - **IP Address in Binary:** 11000000.10101000.11001000.00000000
 - **IP Address in Decimal:** 192.168.200.0
 - **Class:** Class C
@@ -55,4 +55,20 @@
 - **Network IP:** 172.16.0.0
 - **Usable Host Range:** 172.16.0.1 to 172.16.255.254
 - **Broadcast IP:** 172.16.255.255
+
+## LAN
+### Local Area Network (LAN)
+
+A local area network (LAN) is a network that connects computers and devices within a limited geographical area, such as a home, school, office building, or campus. LANs typically use wired or wireless connections to enable communication and resource sharing between devices, such as computers, printers, servers, and storage devices. They are commonly used for tasks like accessing the internet, sharing files and resources, and running applications within the local network. LANs are characterized by high-speed data transfer rates, low latency, and relatively low cost of implementation and maintenance compared to wide area networks (WANs).
+
+### LAN Connected to the Internet
+
+No, a LAN connected to the internet is typically not considered just a LAN but rather an interconnected network comprising both LAN and WAN (Wide Area Network) components. While the LAN portion refers to the local network within a limited geographical area, the WAN component encompasses the broader network infrastructure that facilitates internet connectivity. The connection between the LAN and the internet usually involves a router or gateway device that serves as the interface between the local network and the external internet.
+
+## Network Topology
+![Untitled Diagram drawio](https://github.com/Rohail30/CNDC/assets/96627590/7d3cf915-2906-4d2f-bf50-309be61934be)
+
+## Numbert of networks
+The picture of network topology shows 3 networks
+![Untitled Diagram drawio](https://github.com/Rohail30/CNDC/assets/96627590/3acb87b7-1721-4bbd-a882-5aee1482cd94)
 
