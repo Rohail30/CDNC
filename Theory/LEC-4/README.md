@@ -68,7 +68,17 @@ No, a LAN connected to the internet is typically not considered just a LAN but r
 ## Network Topology
 ![Untitled Diagram drawio](https://github.com/Rohail30/CNDC/assets/96627590/7d3cf915-2906-4d2f-bf50-309be61934be)
 
-## Numbert of networks
-The picture of network topology shows 3 networks
+## Identifying Number of Networks in a network topology
+The number of networks in a network topology is determined by the number of routers present. Each router represents a boundary between different IP subnets, separating them into distinct network segments.The picture of network topology above shows 3 networks,
+
+**Here is how:**
+
 ![Untitled Diagram drawio](https://github.com/Rohail30/CNDC/assets/96627590/3acb87b7-1721-4bbd-a882-5aee1482cd94)
+
+## Subnetting and VLSM
+
+**Subnetting** involves dividing a network into smaller subnetworks to improve performance, security, and manageability. It allows for efficient use of IP addresses by allocating them based on network requirements.
+
+**Variable Length Subnet Masking (VLSM)** is a subnetting technique that enables the allocation of different-sized subnets, allowing for more efficient use of IP addresses within a network hierarchy.
+
 
