@@ -81,4 +81,26 @@ The number of networks in a network topology is determined by the number of rout
 
 **Variable Length Subnet Masking (VLSM)** is a subnetting technique that enables the allocation of different-sized subnets, allowing for more efficient use of IP addresses within a network hierarchy.
 
+## VLSM Task Example
+### Apply subnetting on the below networks using 192.168.1.0/24 IP Address
+![Untitled Diagram drawio](https://github.com/Rohail30/CNDC/assets/96627590/7d3cf915-2906-4d2f-bf50-309be61934be)
+
+### Networks: 
+There are 3 three networks, let's number them from left to right.
+- **Network1:** 1Router+1Switch+2PCs+NetworkIP+BroadcastIP
+- **Network2:** ---
+- **Network3:** 1Router+2witches+4PCs+NetworkIP+BroadcastIP
+
+### Steps for Subnetting:
+
+1. **Arrange Networks:** Organize the networks in descending order based on their size or number of devices. For example, list Network3 first, followed by Network1, and then Network2.
+
+2. **Calculate Usable Hosts:** Determine the total number of devices (hosts) in each network. This includes computers, servers, printers, routers, switches, etc. Count all devices that require individual IP addresses. For instance, if Network3 has 7 devices, there are initially 7 usable hosts.
+
+3. **Allocate Subnet Addresses:** Allocate enough subnet addresses to accommodate the required number of hosts. Use the formula 2^(n+2) where 'n' is the number of bits borrowed for subnetting. For example, if Network3 needs 7 usable hosts, allocate enough bits in the subnet mask to accommodate at least 14 hosts, which might require borrowing 4 bits (2^4 = 16, but 2 addresses are reserved for network address and broadcast address). So, for Network3, allocate a subnet with a subnet mask that can support 16 addresses, providing 7 usable hosts.
+
+4. **Determine Subnet Mask:** Calculate the subnet mask based on the number of bits borrowed for subnetting. For example, if 4 bits are borrowed for Network3, the subnet mask would be 255.255.255.240 (/28 in CIDR notation).
+
+5. **Assign Subnet Addresses:** Assign subnet addresses to each network according to their requirements. Ensure that each network has enough subnet addresses to accommodate the expected number of hosts. For example, if Network3 requires 14 usable hosts, assign a subnet address range with at least 16 addresses.
+
 
