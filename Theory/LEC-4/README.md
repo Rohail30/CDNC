@@ -87,9 +87,9 @@ The number of networks in a network topology is determined by the number of rout
 
 ### Networks: 
 There are 3 three networks, let's number them from left to right.
-- **Network1:** 1Router+1Switch+2PCs+NetworkIP+BroadcastIP
-- **Network2:** ---
-- **Network3:** 1Router+2witches+4PCs+NetworkIP+BroadcastIP
+- **Network-1:** 1Router+1Switch+2PCs+NetworkIP+BroadcastIP
+- **Network-2:** ---
+- **Network-3:** 1Router+2witches+4PCs+NetworkIP+BroadcastIP
 
 ### Steps for Subnetting:
 
@@ -103,4 +103,41 @@ There are 3 three networks, let's number them from left to right.
 
 5. **Assign Subnet Addresses:** Assign subnet addresses to each network according to their requirements. Ensure that each network has enough subnet addresses to accommodate the expected number of hosts. For example, if Network3 requires 14 usable hosts, assign a subnet address range with at least 16 addresses.
 
+### Network-3:
+- **Devices:** 1 Router + 2 Switches + 4 PCs + Network IP + Broadcast IP = 9 devices
+- **Total host:** 2^4 = 16
+- **Usable Hosts Required:** 16 - 2 (Network IP and Broadcast IP) = 14 usable hosts
+- **Subnet Allocation:** We need to allocate enough subnet addresses to accommodate at least 7 usable hosts.
+- **Subnet Mask:** Since we need 7 usable hosts, a subnet mask of /28 (255.255.255.240) will provide 16 total addresses (14 usable hosts).
+- **Subnet Range:** 192.168.1.15/28
+  - Network Address: 192.168.1.0
+  - First Usable Host: 192.168.1.1 
+  - Last Usable Host: 192.168.1.14 
+  - Broadcast Address: 192.168.1.15
+
+### Network-1:
+- **Devices:** 1 Router + 1 Switches + 2 PCs + Network IP + Broadcast IP = 6 devices
+- **Total host:**  2^3 = 8
+- **Usable Hosts Required:** 8 - 2 (Network IP and Broadcast IP) = 6 usable hosts
+- **Subnet Allocation:** We need to allocate enough subnet addresses to accommodate at least 4 usable hosts.
+- **Subnet Mask:** Since we need 4 usable hosts, a subnet mask of /29 (255.255.255.248) will provide 8 total addresses (6 usable hosts).
+- **Subnet Range:** 192.168.1.23/29
+  - Network Address: 192.168.1.16
+  - First Usable Host: 192.168.1.17 
+  - Last Usable Host: 192.168.1.22 
+  - Broadcast Address: 192.168.1.23
+ 
+  ### Network-2:
+- **Devices:** 2 Routers + Network IP + Broadcast IP = 4 devices
+- **Total host:**  2^2 = 4
+- **Usable Hosts Required:** 4 - 2 (Network IP and Broadcast IP) = 2 usable hosts
+- **Subnet Allocation:** We need to allocate enough subnet addresses to accommodate at least 2 usable hosts.
+- **Subnet Mask:** Since we need 2 usable hosts, a subnet mask of /30 (255.255.255.252) will provide 4 total addresses (2 usable hosts).
+- **Subnet Range:** 192.168.1.31/30
+  - Network Address: 192.168.1.24
+  - First Usable Host: 192.168.1.25 
+  - Last Usable Host: 192.168.1.26 
+  - Broadcast Address: 192.168.1.27
+ 
+**Tip!** The Network address will always be an even number and broadcast IP will always be an odd.
 
