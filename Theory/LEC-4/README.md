@@ -127,7 +127,7 @@ There are 3 three networks, let's number them from left to right.
   - Last Usable Host: 192.168.1.22 
   - Broadcast Address: 192.168.1.23
  
-  ### Network-2:
+### Network-2:
 - **Devices:** 2 Routers + Network IP + Broadcast IP = 4 devices
 - **Total host:**  2^2 = 4
 - **Usable Hosts Required:** 4 - 2 (Network IP and Broadcast IP) = 2 usable hosts
