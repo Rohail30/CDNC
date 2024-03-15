@@ -88,7 +88,7 @@ The number of networks in a network topology is determined by the number of rout
 ### Networks: 
 There are 3 three networks, let's number them from left to right.
 - **Network-1:** 1Router+1Switch+2PCs+NetworkIP+BroadcastIP
-- **Network-2:** ---
+- **Network-2:** 2Routers+NetworkIP+BroadcastIP
 - **Network-3:** 1Router+2witches+4PCs+NetworkIP+BroadcastIP
 
 ### Steps for Subnetting:
