@@ -1,176 +1,45 @@
-# Router
-Router>
-Router>ena
-Router>enable 
-Router#hostname R
-                ^
-% Invalid input detected at '^' marker.
-	
-Router#hostname R
-                ^
-% Invalid input detected at '^' marker.
-	
-Router#config
-Router#configure t
-Router#configure terminal 
-Enter configuration commands, one per line.  End with CNTL/Z.
-Router(config)#hostname R
-R(config)#int g0/0
-R(config-if)#ip address 192.168.1.1 255.255.255.0
-R(config-if)#des
-R(config-if)#description conn
-R(config-if)#description connected to zabdesk
-R(config-if)#no shut
+## Dynamic Host Configuration Protocol (DHCP)
+DHCP (Dynamic Host Configuration Protocol) automates the assignment of IP addresses and network settings to devices on a network, simplifying network administration and ensuring efficient use of IP addresses.
 
-R(config-if)#
-%LINK-5-CHANGED: Interface GigabitEthernet0/0, changed state to up
+## Setting up DHCP in Router
 
-%LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/0, changed state to up
+1. `Router> enable` - Enter Privileged EXEC Mode
+2. `Router# configure terminal` - Enter Global Configuration Mode
+3. `Router(config)# hostname R` - Set the hostname to R
+4. `R(config)# interface g0/0` - Access Interface Configuration Mode for GigabitEthernet 0/0
+5. `R(config-if)# ip address 192.168.1.1 255.255.255.0` - Set IP address and subnet mask for the interface
+6. `R(config-if)# description connected to ACCOUNTS` - Add a description for the interface
+7. `R(config-if)# no shutdown` - Enable the interface
+8. `R(config-if)# end` - Exit Interface Configuration Mode
+9. `Router# configure terminal` - Re-enter Global Configuration Mode
+10. `R(config)# service dhcp` - Enable DHCP service on the router
+11. `R(config)# ip dhcp pool ACCOUNTS` - Create a DHCP pool named ACCOUNTS
+12. `Router(dhcp-config)# network 192.168.1.0 255.255.255.0` - Specify the network range for DHCP
+13. `Router(dhcp-config)# default-router 192.168.1.1` - Set the default gateway for DHCP clients
+14. `Router(dhcp-config)# dns-server 8.8.8.8` - Set the DNS server for DHCP clients
+15. `Router(dhcp-config)# exit` - Exit DHCP pool configuration
+16. `R(config)# ip dhcp excluded-address 192.168.1.1 192.168.1.2` - Exclude DHCP address range to avoid conflicts
+17. `R(config)# exit` - Exit Global Configuration Mode
+18. `Router# copy running-config startup-config` - Save the configuration changes
+19. `Router# configure terminal` - Re-enter Global Configuration Mode
+20. `R(config)# line vty 0 15` - Access Line Configuration Mode for VTY lines
+21. `R(config-line)# password cisco` - Set a password for VTY lines
+22. `R(config-line)# login` - Enable login on VTY lines
+23. `R(config-line)# end` - Exit Line Configuration Mode
+24. `Router# copy running-config startup-config` - Save the configuration changes
+25. `Router# exit` - Exit Privileged EXEC Mode
 
-R(config-if)#end
-R#
-%SYS-5-CONFIG_I: Configured from console by console
-
-
-R#service dhcp pool zabdesk
-          ^
-% Invalid input detected at '^' marker.
-	
-R#service dhcp 
-          ^
-% Invalid input detected at '^' marker.
-	
-R#conf
-R#configure t
-R#configure terminal 
-Enter configuration commands, one per line.  End with CNTL/Z.
-R(config)#service dhcp
-R(config)#ip dhcp pool ZABDESK
-R(dhcp-config)#network 192168.1.0 255.255.255.0
-                       ^
-% Invalid input detected at '^' marker.
-	
-R(dhcp-config)#default
-R(dhcp-config)#default-router 192.168.1.1
-R(dhcp-config)#dns
-R(dhcp-config)#dns-server 8.8.8.8
-R(dhcp-config)#exit
-R(config)#ip dhc
-R(config)#ip dhcp exclu
-R(config)#ip dhcp excluded-address from
-R(config)#ip dhcp excluded-address from c
-R(config)#ip dhcp excluded-address from cons
-R(config)#ip dhcp excluded-address 192.168.1.1 192.168.1.2
-R(config)#exit
-R#
-%SYS-5-CONFIG_I: Configured from console by console
-
-R#cof
-R#con
-R#con
-R#conf
-R#configure t
-R#configure terminal 
-Enter configuration commands, one per line.  End with CNTL/Z.
-R(config)#line vty 0 15
-R(config-line)#cisco
-               ^
-% Invalid input detected at '^' marker.
-	
-R(config-line)#password cisco
-R(config-line)#login
-R(config-line)#exit
-R(config)#copy run config
-            ^
-% Invalid input detected at '^' marker.
-	
-R(config)#co
-R(config)#exit
-R#
-%SYS-5-CONFIG_I: Configured from console by console
-
-R#cop
-R#copy r
-R#copy running-config 
-% Incomplete command.
-
-
-
-
-
-# swith
-
-Switch>
-Switch>
-Switch>
-Switch>
-Switch>
-Switch>en
-Switch>enable 
-Switch#co
-Switch#conf
-Switch#configure t
-Switch#configure terminal 
-Enter configuration commands, one per line.  End with CNTL/Z.
-Switch(config)#hostname S1
-S1(config)#interface vlan 1
-S1(config-if)#ip ad
-S1(config-if)#ip address 192.168.1.2 255.255.255.0
-S1(config-if)#no shut
-
-S1(config-if)#
-%LINK-5-CHANGED: Interface Vlan1, changed state to up
-
-%LINEPROTO-5-UPDOWN: Line protocol on Interface Vlan1, changed state to up
-
-S1(config-if)#exit
-S1(config)#de
-S1(config)#default-g
-S1(config)#default-gat
-S1(config)#ip d
-S1(config)#ip default-ga
-S1(config)#ip default-gateway 192.168.1.1
-S1(config)#line vty 0 15
-S1(config-line)#pas
-S1(config-line)#password cisco
-S1(config-line)#log
-S1(config-line)#log
-% Ambiguous command: "log"
-S1(config-line)#login
-S1(config-line)#end
-S1#
-%SYS-5-CONFIG_I: Configured from console by console
-
-S1#copy r
-S1#copy running-config 
-% Incomplete command.
-
-
-## Class commands
-
-R (config)# service dhcp
-R (config)# ip dhcp pool ACCONUTS
-R (dhcp-config)# network 192.168.1.0 255.255.255.0
-R (dhcp-config)# default-router 192.168.1.1
-R (dhcp-config)# dns-server 8.8.8.8
-R (dhcp-config)# exit
-R (config)# ip dhcp excluded-address 192.168.1.1 192.168.1.2
-R (config)# ex
-R # copy run start
-
-
-R(config)# line vty 0 15
-R(config-line)# password cisco
-R(config-line)# login
-R(config-line)# end
-R# copy run start
-R#exit
-R#
-
-
-R> enable
-R # configure terminal
-R (config) # interface gigabitEthernet 0/0
-R(config-if)# ip address 192.168.1.1 255.255.255.0
-R(config-if)# description connected to ACCOUNTS
-R(config-if)# no shutdown
+## Setting up switch for DHCP
+1. `Switch> enable` - Enter Privileged EXEC Mode
+2. `Switch# configure terminal` - Enter Global Configuration Mode
+3. `Switch(config)# hostname S1` - Set the hostname to S1
+4. `S1(config)# interface vlan 1` - Access Interface Configuration Mode for VLAN 1
+5. `S1(config-if)# ip address 192.168.1.2 255.255.255.0` - Set IP address and subnet mask for VLAN 1 interface
+6. `S1(config-if)# no shutdown` - Enable the interface
+7. `S1(config-if)# exit` - Exit Interface Configuration Mode
+8. `S1(config)# ip default-gateway 192.168.1.1` - Set the default gateway
+9. `S1(config)# line vty 0 15` - Access Line Configuration Mode for VTY lines
+10. `S1(config-line)# password cisco` - Set a password for VTY lines
+11. `S1(config-line)# login` - Enable login on VTY lines
+12. `S1(config-line)# end` - Exit Line Configuration Mode
+13. `S1# copy running-config` - Save the configuration changes
