@@ -145,3 +145,32 @@ S1#copy r
 S1#copy running-config 
 % Incomplete command.
 
+
+## Class commands
+
+R (config)# service dhcp
+R (config)# ip dhcp pool ACCONUTS
+R (dhcp-config)# network 192.168.1.0 255.255.255.0
+R (dhcp-config)# default-router 192.168.1.1
+R (dhcp-config)# dns-server 8.8.8.8
+R (dhcp-config)# exit
+R (config)# ip dhcp excluded-address 192.168.1.1 192.168.1.2
+R (config)# ex
+R # copy run start
+
+
+R(config)# line vty 0 15
+R(config-line)# password cisco
+R(config-line)# login
+R(config-line)# end
+R# copy run start
+R#exit
+R#
+
+
+R> enable
+R # configure terminal
+R (config) # interface gigabitEthernet 0/0
+R(config-if)# ip address 192.168.1.1 255.255.255.0
+R(config-if)# description connected to ACCOUNTS
+R(config-if)# no shutdown
