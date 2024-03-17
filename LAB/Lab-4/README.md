@@ -1,4 +1,4 @@
-## Router as DHCP server.
+# Router as DHCP server.
 
 ## Dynamic Host Configuration Protocol (DHCP)
 DHCP (Dynamic Host Configuration Protocol) automates the assignment of IP addresses and network settings to devices on a network, simplifying network administration and ensuring efficient use of IP addresses.
