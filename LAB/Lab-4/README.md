@@ -2,9 +2,11 @@
 
 ## Dynamic Host Configuration Protocol (DHCP)
 DHCP (Dynamic Host Configuration Protocol) automates the assignment of IP addresses and network settings to devices on a network, simplifying network administration and ensuring efficient use of IP addresses.
-
+#
 ![image](https://github.com/Rohail30/CNDC/assets/96627590/418ef3eb-fd47-49eb-adb9-1820597c5954)
+#
 ![image](https://github.com/Rohail30/CNDC/assets/96627590/0983927d-d7b6-4795-90ec-a17b9d627e94)
+#
 
 ### Configure S1 with an IP address and configure Virtual Terminal Line (VTY):
 #### Switch
