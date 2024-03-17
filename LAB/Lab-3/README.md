@@ -46,6 +46,8 @@
 #
 ### Setting up Virtual Terminal Lines (VTY)
 
+We set up VTY (Virtual Terminal) lines to allow remote access to a device, such as a router or switch, over a network using protocols like Telnet or SSH. These lines define the number of concurrent connections allowed and specify authentication settings for users accessing the device remotely.
+
 To set up VTY lines for remote access:
 
 1. `S1> enable`
