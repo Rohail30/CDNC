@@ -91,7 +91,7 @@ Telnet is a network protocol for remote access to devices over a network. It all
 <br>
 
 #
-### Switch Configuration
+### Switch Configuration.
 1. `Switch> enable`- Enter Privileged EXEC Mode
 2. `Switch# show running-config`- Show the current configuration
 3. `Switch# configure terminal`- Enter Global Configuration Mode
@@ -110,7 +110,7 @@ Telnet is a network protocol for remote access to devices over a network. It all
 <br>
 
 #
-### Router Configuration
+### Router Configuration.
 1. `Router> enable`- Enter Privileged EXEC Mode
 2. `Router# configure terminal`- Enter Global Configuration Mode
 3. `Router(config)# interface gigabitEthernet 0/0` or `interface gigabitEthernet 0/1` - Access Interface Configuration Mode for GigabitEthernet 0/0 or GigabitEthernet 0/1- Enter Interface Configuration Mode
@@ -126,7 +126,7 @@ Telnet is a network protocol for remote access to devices over a network. It all
 <br>
 
 #
-### Default Gateway Configuration on Switches
+### Default Gateway Configuration on Switches.
 
 1. `S1>enable` - Enter Privileged EXEC Mode
 2. `S1#configure terminal` - Enter Global Configuration Mode
@@ -137,7 +137,7 @@ Telnet is a network protocol for remote access to devices over a network. It all
 <br>
 
 #
-### Setting up Virtual Terminal Lines (VTY)
+### Setting up Virtual Terminal Lines (VTY).
 
 We set up VTY (Virtual Terminal) lines to allow remote access to a device, such as a router or switch, over a network using protocols like Telnet or SSH. These lines define the number of concurrent connections allowed and specify authentication settings for users accessing the device remotely.
 
