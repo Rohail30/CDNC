@@ -14,9 +14,9 @@
 
 6. **Host Portion**: The host portion of an IP address represents the individual device within the network. It is determined by the subnet mask. In our example, the host portion is `.100`.
 
-7. **Number of Zeros**: The number of zeros in the subnet mask indicates the number of bits reserved for the network portion of the IP address. In our example, the subnet mask `255.255.255.0` has `24` zeros, indicating that the first `24` bits represent the network portion.
+7. **Number of Zeros**: The number of zeros in the subnet mask indicates the number of bits reserved for the host portion of the IP address. In our example, the subnet mask `255.255.255.0` has `8` zeros, indicating that the last `8` bits represent the host portion.          
 
-8. **Number of Ones**: The number of ones in the subnet mask indicates the number of bits reserved for the host portion of the IP address. In our example, the subnet mask `255.255.255.0` has `8` ones, indicating that the last `8` bits represent the host portion.
+8. **Number of Ones**:  The number of ones in the subnet mask indicates the number of bits reserved for the network portion of the IP address. In our example, the subnet mask `255.255.255.0` has `24` ones, indicating that the first `24` bits represent the network portion.
 
 9. **Subnet**: A subnet is a logical subdivision of an IP network. It allows a single network to be divided into multiple smaller networks for organizational or security purposes. Subnetting involves dividing the available IP addresses into smaller blocks to accommodate different network requirements. In our example, the subnet is defined by the network IP address `192.168.1.0` and the subnet mask `255.255.255.0`.
 
