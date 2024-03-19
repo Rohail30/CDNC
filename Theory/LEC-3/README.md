@@ -98,6 +98,8 @@ For example, in the OSI model:
 
 The TCP/IP model and the OSI (Open Systems Interconnection) model are both conceptual frameworks used to understand and describe the functions of networking protocols. Here's a comparison between the two:
 
+![image](https://github.com/Rohail30/CNDC/assets/96627590/5d556a6a-8d03-4bfc-bf37-c7ebfb2ae3d3)
+
 ## OSI vs TCP/IP
 ### TCP/IP Model:
 - Developed by the Department of Defense (DoD) in the 1970s for ARPANET, the precursor to the modern internet.
