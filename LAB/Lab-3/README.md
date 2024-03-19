@@ -55,7 +55,7 @@ NVRAM stands for Non-Volatile Random Access Memory. It's a type of memory used i
 1. `R> enable` - Enter Privileged EXEC Mode
 2. `R # configure terminal` - Enter Global Configuration Mode
 3. `R (config) # interface gigabitEthernet 0/0` - Access Interface Configuration Mode for GigabitEthernet 0/0
-4. `R(config-if)# ip address 192.168.1.2 255.255.255.0` - Set IP address and subnet mask
+4. `R(config-if)# ip address 192.168.1.1 255.255.255.0` - Set IP address and subnet mask
 5. `R(config-if)# no shutdown` - Enable the interface
 6. `R(config-if)# exit` - Exit Interface Configuration Mode
 7. `R (config) # interface gigabitEthernet 0/1` - Access Interface Configuration Mode for GigabitEthernet 0/1
