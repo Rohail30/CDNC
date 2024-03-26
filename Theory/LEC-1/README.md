@@ -39,21 +39,8 @@ Data communications is the process of transmitting and receiving data between tw
 Understanding computer networks and data communications is essential for anyone working in the field of information technology. It forms the foundation for building and managing modern computing infrastructures, as well as developing applications and services that rely on network connectivity.
 
 # Differences Between a Switch and a Router
-
-## Functionality:
-
 - **Switch:** Operates at the data link layer (Layer 2) and forwards data packets between devices within a single local area network (LAN) based on their MAC addresses.
 - **Router:** Operates at the network layer (Layer 3) and forwards data packets between different networks based on their IP addresses.
-
-## Addressing:
-
-- **Switch:** Uses MAC addresses to forward data packets within a single network segment.
-- **Router:** Uses IP addresses to forward data packets between different networks.
-
-## Scope:
-
-- **Switch:** Typically used within a single LAN to connect multiple devices.
-- **Router:** Used to connect multiple LANs or different network segments together.
 
 # Peer-to-Peer (P2P) Connection
 
