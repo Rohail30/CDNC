@@ -39,7 +39,9 @@ IEEE is a leading professional association known for developing technical standa
 # Ethernet Standards (Copper)
 
 <img src='./eth-sta.png'>
-![image](https://github.com/Rohail30/CNDC/assets/96627590/7ba6b9c7-0b0f-4fe6-9877-b52f8869538f)
+
+![image](https://github.com/Rohail30/CNDC/assets/96627590/85e56116-4faf-4d09-8181-306695c492bd)
+
 
 # UTP Cables (Unshielded Twisted Pair)
 
