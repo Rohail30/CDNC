@@ -122,3 +122,8 @@ Auto MDIX (Automatic Medium-Dependent Interface Crossover) is a feature in moder
 - **Limitations:** They are more expensive than UTP cables and require specialized equipment for installation and maintenance.
 
 <img src='./uvsf.png'>
+
+![image](https://github.com/Rohail30/CNDC/assets/96627590/45043122-35fd-4848-b0fd-e7d4ae794bed)
+
+![image](https://github.com/Rohail30/CNDC/assets/96627590/4682d3ce-aed7-4760-be61-637c03d25ecd)
+
