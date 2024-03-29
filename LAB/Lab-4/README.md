@@ -63,7 +63,7 @@ interfaces. Alternatively, you can also use the `show running-config` command.
 9. `R# write memory` - Save the configuration changes to NVRAM
 10. `R# exit` - Exit Privileged EXEC Mode
 
-#
+---
 ## Setting up DHCP in Router
 
 1. `Router> enable` - Enter Privileged EXEC Mode
