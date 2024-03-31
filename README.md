@@ -11,5 +11,8 @@
 5. [Lab5: Configuring VLANs and Trunking](https://github.com/Rohail30/CNDC/tree/main/LAB/LAB-5)
 </details>
 
+### Theory:
+<details>
 
-1. [Lab1: Network Troubleshooting Commands](https://github.com/yourusername/lab1)
+</details>
+
