@@ -14,10 +14,10 @@
 ### Theory:
 <details>
   
-1. [Lecture1: Introduction to Computer Networks and Data Communications](#lecture1-introduction-to-computer-networks-and-data-communications)
-2. [Lecture2: Interfaces and Cables in Networking](#lecture2-interfaces-and-cables-in-networking)
-3. [Lecture3: OSI Model](#lecture3-osi-model)
-4. [Lecture4: Networking](#lecture4-networking)
-5. [Lecture5: Ethernet LAN Switching](#lecture5-ethernet-lan-switching)
+1. [Lecture1: Introduction to Computer Networks and Data Communications](https://github.com/Rohail30/CNDC/tree/main/Theory/LEC-1)
+2. [Lecture2: Interfaces and Cables in Networking](https://github.com/Rohail30/CNDC/tree/main/Theory/LEC-2)
+3. [Lecture3: OSI Model]([#lecture3-osi-model](https://github.com/Rohail30/CNDC/tree/main/Theory/LEC-3)
+4. [Lecture4: Networking](https://github.com/Rohail30/CNDC/tree/main/Theory/LEC-4)
+5. [Lecture5: Ethernet LAN Switching](https://github.com/Rohail30/CNDC/tree/main/Theory/LEC-5)
 </details>
 
