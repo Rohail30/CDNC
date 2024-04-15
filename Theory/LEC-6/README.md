@@ -68,5 +68,31 @@ A collision in networking occurs when two devices on a shared network attempt to
 ## CSMA/CD
 **C**arrier **S**ense **M**ultiple **A**ccess with **C**ollision **D**etection Before sending frames, devices 'listen' to the collision domain until they detect that other devices are not sending. If a collision does occur, the device sends a jamming signal to inform the other devices that a collision happened. Each device will wait a random period of time before sending frames again. The process repeats.
 
+## Auto-negotiation 
+Auto-negotiation is a feature in Ethernet networking that allows devices to automatically negotiate and configure their connection settings, such as speed, duplex mode (full or half), and flow control. When two devices with auto-negotiation capabilities are connected, they exchange signaling messages to determine the optimal configuration for their connection.
+
+- Interfaces that can run at different speeds (10/100 or 10/100/1000) have default settings of speed auto and duplex auto.
+- Interfaces 'advertise' their capabilities to the neighboring device, and they negotiate the best speed and duplex settings they are both capable of.
+
+![image](https://github.com/Rohail30/CNDC/assets/96627590/ec39f2ec-cbd3-4f3a-bbc8-cc865725cba1)
+
+What if autonegotiation is disabled on the device connected to the switch
+
+**SPEED:** The switch will try to sense the speed that the other device is operating at. If fails to sense the speed, it will use the slowest supported speed (ie. 10 Mbps on a 10/100/1000 interface)
+
+**DUPLEX:** If the speed is 10 or 100 Mbps, the switch will use half duplex. If the speed is 1000 Mbps or greater, use full duplex.
+
+![image](https://github.com/Rohail30/CNDC/assets/96627590/359f78d8-e48c-40af-a92a-f56395e264f6)
+
+## Interface Errors
+
+![image](https://github.com/Rohail30/CNDC/assets/96627590/c9635064-65d5-411e-beb6-036d4585306b)
+
+- **Runts:** Frames that are smaller than the minimum frame size (64 bytes)
+- **Giants:** Frames that are larger than the maximum frame size (1518 bytes)
+- **CRC:** Frames that failed the CRC check (in the Ethernet FCS trailer)
+- **Frame:** Frames that have an incorrect format (due to an error)
+- **Input errors:** Total of various counters, such as the above four
+- **Output errors:** Frames the switch tried to send, but failed due to an error
 
 
