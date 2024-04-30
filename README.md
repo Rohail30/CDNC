@@ -8,6 +8,8 @@
 3. [Lab3: Navigating the Two Different Networks](https://github.com/Rohail30/CNDC/tree/main/LAB/LAB-3)
 4. [Lab4: Router as DHCP Server](https://github.com/Rohail30/CNDC/tree/main/LAB/LAB-4)
 5. [Lab5: Configuring VLANs and Trunking](https://github.com/Rohail30/CNDC/tree/main/LAB/LAB-5)
+6. [Lab6: Security Features on Switch](https://github.com/Rohail30/CNDC/tree/main/LAB/LAB-6)
+7. [Lab7: IPv4 Static and Default Routes](https://github.com/Rohail30/CNDC/tree/main/LAB/LAB-7)
 </details>
 
 ### Theory:
