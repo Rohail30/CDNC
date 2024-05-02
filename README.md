@@ -20,5 +20,7 @@
 3. [Lecture3: OSI Model](https://github.com/Rohail30/CNDC/tree/main/Theory/LEC-3)
 4. [Lecture4: Networking](https://github.com/Rohail30/CNDC/tree/main/Theory/LEC-4)
 5. [Lecture5: Ethernet LAN Switching](https://github.com/Rohail30/CNDC/tree/main/Theory/LEC-5)
+6. [Lecture6: Switch Interfaces](https://github.com/Rohail30/CNDC/tree/main/Theory/LEC-6)
 </details>
 
+Switch Interfaces
