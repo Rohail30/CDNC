@@ -36,8 +36,16 @@ Inter-VLAN routing is the process of allowing communication between different VL
 
 3. **Keeping Traffic Separate**: Even though the router connects the VLANs, it ensures that traffic from one VLAN doesn't leak into another unless specifically allowed. This helps maintain network security and privacy.
 
+## Trunk
+A trunk, in networking, is a type of connection between network devices, typically switches or routers, that can carry traffic for multiple VLANs simultaneously.
 
+- In a small network with few VLANs, it is possible to use a separate interface for each VLAN when connecting switches to switches, and switches to routers.
 
+- However, when the number of VLANs increases, this is not viable. It will result in wasted interfaces, and often routers won't have enough interfaces for each VLAN.
+
+- You can use trunk ports to carry traffic from multiple VLANs over a single interface.
+
+![image](https://github.com/Rohail30/CNDC/assets/96627590/1a136378-3cba-4f47-8a15-8b10c97f353e)
 
 
 
