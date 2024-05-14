@@ -26,4 +26,3 @@
 </details>
 
 Switch Interfaces
-..
