@@ -17,12 +17,12 @@
 ### Theory:
 <details>
   
-1. [Lecture1: Introduction to Computer Networks and Data Communications](https://github.com/Rohail30/CNDC/tree/main/Theory/LEC-1)
-2. [Lecture2: Interfaces and Cables in Networking](https://github.com/Rohail30/CNDC/tree/main/Theory/LEC-2)
-3. [Lecture3: OSI Model](https://github.com/Rohail30/CNDC/tree/main/Theory/LEC-3)
-4. [Lecture4: Networking](https://github.com/Rohail30/CNDC/tree/main/Theory/LEC-4)
-5. [Lecture5: Ethernet LAN Switching](https://github.com/Rohail30/CNDC/tree/main/Theory/LEC-5)
-6. [Lecture6: Switch Interfaces](https://github.com/Rohail30/CNDC/tree/main/Theory/LEC-6)
+1. [Lecture1: Introduction to Computer Networks and Data Communications](https://github.com/Rohail30/CNDC/tree/main/Theory/LEC-01)
+2. [Lecture2: Interfaces and Cables in Networking](https://github.com/Rohail30/CNDC/tree/main/Theory/LEC-02)
+3. [Lecture3: OSI Model](https://github.com/Rohail30/CNDC/tree/main/Theory/LEC-03)
+4. [Lecture4: Networking](https://github.com/Rohail30/CNDC/tree/main/Theory/LEC-04)
+5. [Lecture5: Ethernet LAN Switching](https://github.com/Rohail30/CNDC/tree/main/Theory/LEC-05)
+6. [Lecture6: Switch Interfaces](https://github.com/Rohail30/CNDC/tree/main/Theory/LEC-06)
 </details>
 
 Switch Interfaces
